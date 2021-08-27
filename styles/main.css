@@ -1,0 +1,251 @@
+/* Write your CSS in here */
+body {
+   /* Don't delete this */
+   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 1024px;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #294a71;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   height: 64px;
+}
+
+.logo {
+   color: #ffffff;
+   font-size: 30px;
+   margin-left: 20px;
+}
+
+.avatar {
+   border: 3px solid #979797;
+   height: 48px;
+   width: 48px;
+   border-radius: 50%;
+   background-image: url(../images/bruno-ewayu-D8Qm_GmKRbk-unsplash.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.nav-list {
+   display: flex;
+   flex-wrap: nowrap;
+   font-size: 20px;
+   width: 290px;
+   justify-content: space-between;
+   margin-right: 23px;
+}
+
+.nav-item {
+   display: flex;
+}
+
+a {
+   text-decoration: none;
+   color: #d2d2d2;
+}
+
+.masthead {
+   display: flex;
+   flex-direction: column;
+   background-color: #0c2139;
+   color: #ffffff;
+}
+
+.mediabox {
+   display: flex;
+   margin-left: 67px;
+   margin-right: 68px;
+   margin-top: 61px;
+   margin-bottom: 59px;
+}
+
+.mediabox-visual {
+   background-image: url(../images/engin-akyurt-C11UKrFo4CQ-unsplash.jpg);
+   background-size: cover;
+   height: 217px;
+   width: 380px;
+}
+
+.mediabox-text {
+   text-align: right;
+   width: 482px;
+   margin: auto;
+}
+
+.mediabox:nth-of-type(1) {
+   flex-direction: row-reverse;
+}
+
+.mediabox-text__headline {
+   line-height: 45px;
+   margin: auto;
+   font-weight: normal;
+   font-size: 80px;
+}
+
+.mediabox-text__summary {
+   line-height: 48px;
+   margin: auto;
+   padding-top: 10px;
+   font-weight: 90;
+   font-size: 24px;
+}
+
+.grid {
+   background-color: #294a71;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+}
+
+.boxes {
+   display: grid;
+   font-size: 72px;
+   grid-template-areas:
+      "one two three"
+      "four five six";
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: 50% 50%;
+   row-gap: 75px;
+   justify-content: space-evenly;
+   align-content: space-evenly;
+   margin: auto;
+   padding-top: 75px;
+   padding-bottom: 75px;
+}
+
+.boxes-2 {
+   grid-template-areas:
+      "four five six"
+      "one two three";
+}
+
+.boxes-3 {
+   grid-template-areas:
+      "three five one"
+      "six two four";
+}
+
+.item-1 {
+   display: grid;
+   grid-area: one;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.item-2 {
+   display: grid;
+   grid-area: two;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.item-3 {
+   display: grid;
+   grid-area: three;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.item-4 {
+   display: grid;
+   grid-area: four;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.item-5 {
+   display: grid;
+   grid-area: five;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.item-6 {
+   display: grid;
+   grid-area: six;
+   height: 200px;
+   width: 200px;
+   justify-content: center;
+   align-content: center;
+   color: #4a4a4a;
+   background-color: #d8d8d8;
+   border: #979797;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: bold;
+   margin: auto;
+}
+
+.boxes-1 > .item-3 {
+   color: #d8d8d8;
+   background-color: #4a4a4a;
+}
+
+.boxes-1 > .item-4 {
+   border-radius: 50%;
+}
+
+.boxes-2 > .item-6 {
+   border-radius: 50%;
+}
+
+.boxes-3 > .item-5 {
+   border-radius: 50%;
+}
